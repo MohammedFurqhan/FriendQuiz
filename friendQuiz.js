@@ -6,7 +6,7 @@ console.log("Welcome " ,username);
 
 function play (question , answer){
   var useranswer = readlinesync.question(question);
-  if(useranswer === answer){
+  if(useranswer.toUpperCase() === answer.toUpperCase()){
     console.log("You are correct");
     score = score + 1;
     console.log("You scored :",score);
